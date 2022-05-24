@@ -1,0 +1,12 @@
+<p [ngStyle]="{'font-weight':'bold','font-size':'40px'}">Task3 works!</p>
+<h1 *ngIf="show; then ifblock else elseblock"></h1>
+<ng-template #ifblock>
+    <div [ngStyle]="{'background-color':'green','color': 'yellow','font-weight': 'bold','font-size':'20px'}">Angular community has released its latest version which is known as Angular 8. If you are familiar with previous version of Angular, it will not be difficult for you. You can easily upgrade your Angular CLI to version 8.JavaScript is single threaded,
+        so it is common for more critical tasks like data calls to take place asynchronously. Web Workers facilitates you to run the CPU intensive computations in the background thread, freeing the main thread to update the user interface.
+    </div>
+</ng-template>
+<ng-template #elseblock>
+    <div [ngStyle]="{'background-color':'yellow','font-weight': 'bold','color':'red','font-size':'20px'}">Angular community has released its latest version which is known as Angular 8. If you are familiar with previous version of Angular, it will not be difficult for you. You can easily upgrade your Angular CLI to version 8.JavaScript is single threaded,
+        so it is common for more critical tasks like data calls to take place asynchronously. Web Workers facilitates you to run the CPU intensive computations in the background thread, freeing the main thread to update the user interface.
+    </div>
+</ng-template>
